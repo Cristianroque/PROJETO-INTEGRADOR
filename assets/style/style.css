@@ -1,0 +1,77 @@
+/*CONFIG INICIAL*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --espacamento: 10rem;
+    --colorPadrao: #7E2726;
+}
+.divPrincipalHeader{
+    width: 100%;
+    height: 10vh;
+    padding-left: var(--espacamento);
+    padding-right: var(--espacamento);
+}
+/*------------------HEADER----------------------*/
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listSearch{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.listSearch li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+.listSearch li a:hover{
+    color: var(--colorPadrao);
+}
+.login{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login button{
+    width: 40%;
+    height: 40%;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border-color: var(--colorPadrao);
+    color: var(--colorPadrao);
+    background-color: transparent;
+    margin-right: 10%;
+}
+.login button:hover{
+    background-color: var(--colorPadrao);
+    color: white;
+}
+#imgLogin:hover{
+    cursor: pointer;
+}
+/*---------------MAIN--------------------*/
+main{
+    width: 100%;
+    height: 20vh;
+    border-top: 2px solid #DBDDE1;
+}
