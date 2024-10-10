@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-<div class="divPrincipalHeader">
+<div id="header" class="divPrincipalHeader">
     <header>
         <img id="logoIpua" src="./assets/img/logo.png" width="7%" alt="" srcset="">
         <div class="search">
@@ -24,6 +24,8 @@
         </div>
     </header>
 </div>
+<div class="divFantasma">
+</div>
     <main>
 
         <div class="searchInicial">
@@ -32,13 +34,58 @@
 
                 <div class="titleSearchMain">
                     <div class="contentTitle">
-                        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit..</h1>
+                        <h1>Encontre a melhor oferta pra você...</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis provident, illum minima fuga mollitia quasi harum, corrupti quas soluta a sequi dolore sapiente? Delectus omnis, porro fugiat numquam velit eligendi!</p>
                     </div>
                 </div>
                 <div class="contentSearchMain">
                     <div class="contentSearch">
-
+                        <div class="entradaData">
+                            <img src="./assets/img/calender.png" alt="" srcset="">
+                            <div class="inputDatabox">
+                                <p style="margin-right: 50%;">Entrada</p>
+                                <input type="date" name="" id="inputData">
+                            </div>
+                        </div>
+                        <div class="entradaData">
+                            <div class="inputDatabox">
+                                <p style="margin-right: 60%;">Saida</p>
+                                <input type="date" name="" id="inputData">
+                            </div>
+                        </div>
+                        <div class="quartosData">
+                            <div class="entradaData" style="border-right: none;">
+                                <img style="margin-top: 5px;" src="./assets/img/money.png" alt="" srcset="">
+                                <div class="inputDatabox">
+                                    <p>Preço desejado (Diária)</p>
+                                    <button onclick="aparecerMenuPreco()" class="btnData">R$300 - R$800  <img src="./assets/img/seta.png" width="10px" alt="" srcset=""></button>
+                                    <div class="outrasOpcoes" id="opcoesPreco">
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entradaData" style="border-right: none;">
+                                <img style="margin-top: 5px;" src="./assets/img/pessoa.png" alt="" srcset="">
+                                <div class="inputDatabox">
+                                    <p>Quantidade de Quartos</p>
+                                    <button onclick="aparecerMenuQuartos()" class="btnData">0 - 1 Quartos <img src="./assets/img/seta.png" width="10px" alt="" srcset=""></button>
+                                    <div class="outrasOpcoes" id="opcoesQuartos">
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="pesquisarData">Pesquisar</button>
+                        </div>
                     </div>
                 </div>
 
@@ -46,6 +93,199 @@
 
         </div>
 
+        <div class="promocoes">
+            <h1>CONFIRA NOSSAS PROMOÇÕES</h1>
+
+            <div class="boxPromo">
+                <div id="item1" class="item">                      
+                    <div class="descriptionPromo">
+                  
+                    </div>
+                </div>
+                <div id="item2" class="item">
+                    <div class="descriptionPromo">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="contatoPromo">
+                <div class="avisoPromo">
+                    <img src="./assets/img/envio.png" width="70px" alt="">
+                    <p>FIQUE POR DENTRO DAS NOSSAS PROMOÇÕES</p>
+                </div>
+                <div class="inputPromoBox">
+                    <div>
+                        <div class="inputs">
+                            <div class="email">
+                                <input style="border: none;" class="inputPromo" type="text" placeholder="Primeiro nome">
+                                <input style="border: none;" class="inputPromo" type="email" placeholder="Email favorito" name="" id="">
+                            </div>
+                            <button style="width: 30%;" class="pesquisarData">Enviar</button>
+                        </div>
+                        <div style="margin-left: 10px;" class="checkboxPromo">
+                            <input type="checkbox" name="" id="">
+                            <p style="margin-left: 5px;">Eu aceito receber conteúdos relacionados aos produtos e serviços do Quinta de Ypuã.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="AvaliacoesBox">
+            <div class="titleAval">
+                <h1>Melhores avaliações</h1>
+            </div>
+            <div class="cardsBox">
+                <div class="card">
+                    <div id="img1Card" class="ImgCard">
+
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Lorem Ipsum</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="img2Card" class="ImgCard">
+                       
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Lorem Ipsum</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div id="img3Card" class="ImgCard">
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Lorem Ipsum</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="servicosOferecidos">
+            <div class="textOptions">
+                <div>
+                    <h1>
+                       Serviços oferecidos pela <br> Quinta do Ypuã
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quis fugit officiis doloremque quisquam quam placeat odit quae, itaque veniam quibusdam velit minima magni cupiditate quas! Corporis quae quibusdam quo.
+                    </p>
+                </div>
+                <div class="btnOption">
+                    <button style="width: 40%;font-size: 20px;margin-top: -20px;" class="pesquisarData">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="OptionImg">
+                <div class="columCard">
+                    <div class="OptionCard">
+                        <img src="./assets/img/arCondicionado.png" alt="">
+                        <p>Ar Condicionado</p>
+                    </div>
+                    <div class="OptionCard">
+                         <img src="./assets/img/wifi.png" alt="">
+                        <p>Wi-fi Gratuito</p>
+                    </div>
+                </div>
+                <div class="columCard">
+                    <div class="OptionCard">
+                         <img src="./assets/img/cafe.png" alt="">
+                        <p>Café da Manha</p>
+                    </div>
+                    <div class="OptionCard">
+                         <img src="./assets/img/televisao.png" alt="">
+                        <p>Televisão</p>
+                    </div>
+                </div>
+                <div class="columCard">
+                    <div class="OptionCard">
+                         <img src="./assets/img/toalha.png" alt="">
+                        <p>Toalhas</p>
+                    </div>
+                    <div class="OptionCard">
+                         <img src="./assets/img/cozinha.png" alt="">
+                        <p>Cozinha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sobre">
+            <div class="sobreBox">
+                <div class="boxImgSobre">
+
+
+
+                </div>
+                <div class="boxTextSobre">
+                    <div class="textOptions">
+                        <div id="textSobre">
+                            <h1>
+                                História do Quinta de Ypuã
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quis fugit officiis doloremque quisquam quam placeat odit quae, itaque veniam quibusdam velit minima magni cupiditate quas! Corporis quae quibusdam quo.
+                            </p>
+                        </div>
+                        <div class="btnOption">
+                            <button style="width: 60%;font-size: 20px;" class="pesquisarData">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
