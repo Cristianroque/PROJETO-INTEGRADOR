@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+body{
+    height: 500vh;
+}
 :root{
     --espacamento: 10rem;
     --colorPadrao: #7E2726;
@@ -15,8 +18,14 @@
     height: 10vh;
     padding-left: var(--espacamento);
     padding-right: var(--espacamento);
+    transition: all 0.5s;
 }
+
 /*------------------HEADER----------------------*/
+
+#logoIpua:hover{
+    cursor: pointer;
+}
 header{
     width: 100%;
     height: 10vh;
@@ -53,14 +62,15 @@ header{
     justify-content: center;
 }
 .login button{
-    width: 40%;
-    height: 40%;
+    width: 150px;
+    height: 50px;
     font-size: 1.2rem;
     border-radius: 20px;
     border-color: var(--colorPadrao);
     color: var(--colorPadrao);
     background-color: transparent;
     margin-right: 10%;
+    transition: all 0.5s;
 }
 .login button:hover{
     background-color: var(--colorPadrao);
@@ -69,9 +79,480 @@ header{
 #imgLogin:hover{
     cursor: pointer;
 }
+button:hover{
+    cursor: pointer;
+}
+
 /*---------------MAIN--------------------*/
-main{
+
+.searchInicial{
     width: 100%;
-    height: 20vh;
+    height: 50vh; /*50*/
     border-top: 2px solid #DBDDE1;
+    background-color: #F9F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divCentralMain{
+    width: 80%;
+    height: 35vh; 
+    display: flex;
+    flex-direction: column;
+}
+.titleSearchMain{
+    width: 100%;
+    height: 70%;
+}
+.contentTitle{
+    font-size: 1rem;
+}
+.contentSearchMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentSearch{
+    width: 90%;
+    height: 60%;
+    border-radius: 90px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    display: flex;
+    padding: 15px;
+}
+.entradaData{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: #BFBFBF 1px solid;
+    transition: all 0.5s;
+}
+.quartosData{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+}
+.inputDatabox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+    position: relative;
+    
+}
+input{
+    border: none;
+    background-color: transparent;
+}
+.btnData{
+    background-color: transparent;
+    width: 100%;
+    border: 1.5px solid rgb(161, 161, 161);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.btnData:hover{
+    background-color: #e9e9e9;
+}
+.pesquisarData{
+    background-color: #7E2726;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 150px;
+}
+
+/*----------PROMOCÕES-----------*/
+
+.promocoes{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.promocoes h1{
+    font-weight: normal;
+    font-size: 75px;
+    color: #7E2726;
+    margin-top: 60px;
+}
+.boxPromo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    background-color: #D9D9D9;
+    width: 550px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+}
+#item1{
+    background-image: url(../img/casa1Desconsto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+#item2{
+    background-image: url(../img/dormoInterior.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.descriptionPromo{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contatoPromo{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.avisoPromo{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avisoPromo p{
+    font-size: 30px;
+    width: 75%;
+    margin-left: 30px;    
+}
+.inputPromoBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputs{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.inputPromo{
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: #828282;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #D9D9D9;
+}
+.checkboxPromo{
+    display: flex;
+}
+
+/*---------AVALIACOES---------*/
+
+.AvaliacoesBox{
+    width: 100%;
+    height: 80vh;
+}
+
+.titleAval{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+    padding-left: var(--espacamento);
+    padding-right: var(--espacamento);
+}
+.cardsBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+}
+.card{
+    width: 27%;
+    height: 70%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.ImgCard{
+    width: 100%;
+    height: 60%;
+}
+.textCard{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.title{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+}
+.service{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.service div{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxBtn{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------SERVICOS OFERECIDOS-------------*/
+
+.servicosOferecidos{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+}
+.textOptions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: var(--espacamento);
+}
+.textOptions div{
+    width: 80%;
+}
+.textOptions div p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.textOptions div h1{
+    font-size: 45px;
+}
+.OptionImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right: var(--espacamento);
+}
+.btnOption{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.columCard{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.OptionCard{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    border: 1px solid #E8E8E8;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.OptionCard p{
+    font-size: 20px;
+}
+.OptionCard img{
+    width: 40px;
+}
+#img1Card{
+    background-image: url(../img/carro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2Card{
+    background-image: url(../img/dromo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3Card{
+    background-image: url(../img/suite\ com\ cozinha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----SOBRE---------*/
+
+.sobre{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+.sobreBox{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+.boxImgSobre{
+    height: 100%;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/ipua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxTextSobre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textSobre{
+    width: 100%;
+}
+
+/*-------------MEDIA-QUERY 800px-------------*/
+
+@media (max-width: 800px){
+    header{
+        height: 13vh;
+    }
+    .divPrincipalHeader{
+        height: 13vh;
+    }
+    #logoIpua{
+        width: 10%;
+    }
+  
+    #imgLogin{
+        width: 18px;
+    }
+    .listSearch li a{
+        font-size: 0.5rem;
+    }
+    .login button{
+        width: 55px;
+        height: 20px;
+        border-radius: 20px;
+        font-size: 0.4rem;
+    }
+    .searchInicial{
+        border-top: 1px solid #DBDDE1;
+    }
+    :root{
+        --espacamento: 5rem;
+    }
+    .searchInicial{
+        height: 70vh; 
+    }
+    .divCentralMain{
+        height: 40vh; 
+    }
+    .titleSearchMain{
+        width: 100%;
+        height: 80%;
+    }
+    .contentTitle{
+        font-size: 0.3rem;
+    }
+}
+
+/*-------SCRIPT----------*/
+
+.outrasOpcoes{
+    width: 100%;
+    top: 90%;
+    position: absolute;
+    border: 1px solid rgb(161, 161, 161);
+    border-top: none;
+    background-color: #F9F9FA;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.outrasOpcoes button{
+    border: none;
+}
+.desativado{
+    display: none;
+}
+.positionFlutuante{
+    position: fixed;
+    z-index: 1;
+    background-color: white
+}
+.divFantasma{
+    width: 100%;
+    height: 10vh;
+    position:absolute;
+    top: 0;
+    display: none;
 }
