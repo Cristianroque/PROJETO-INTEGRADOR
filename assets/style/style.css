@@ -1,0 +1,757 @@
+/*CONFIG INICIAL*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --espacamento: 10rem;
+    --colorPadrao: #7E2726;
+}
+.divPrincipalHeader{
+    width: 100%;
+    height: 10vh;
+    padding-left: var(--espacamento);
+    padding-right: var(--espacamento);
+    transition: all 0.5s;
+}
+/*------------------HEADER----------------------*/
+
+#logoIpua:hover{
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listSearch{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+.listSearch li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+.listSearch li a:hover{
+    color: var(--colorPadrao);
+}
+.login{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.login button{
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border-color: var(--colorPadrao);
+    color: var(--colorPadrao);
+    background-color: transparent;
+    margin-right: 10%;
+    transition: all 0.5s;
+}
+.login button:hover{
+    background-color: var(--colorPadrao);
+    color: white;
+}
+#setaLogin:hover{
+    cursor: pointer;
+}
+#imgLogin:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
+}
+.modalH{
+    width: 300px;
+    height: 180px;
+    background-color: white;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    position: absolute;
+    right: 18%;
+    top: 94%;
+    z-index: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+.modalHtitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #7E2726;
+    padding: 15px;
+}
+.modalHtitle h1{
+    font-size: 17px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.modalHtext{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+
+}
+.modalHtext p{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+.modalHbtn{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modalHbtn button{
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    margin: 0;
+}
+.modalHbtn button a{
+    text-decoration: none;
+}
+
+/*---------------MAIN--------------------*/
+
+.searchInicial{
+    width: 100%;
+    height: 50vh; /*50*/
+    border-top: 2px solid #DBDDE1;
+    background-color: #F9F9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divCentralMain{
+    width: 80%;
+    height: 35vh; 
+    display: flex;
+    flex-direction: column;
+}
+.titleSearchMain{
+    width: 100%;
+    height: 70%;
+}
+.contentTitle{
+    font-size: 1rem;
+}
+.contentSearchMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentSearch{
+    width: 90%;
+    height: 60%;
+    border-radius: 90px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    display: flex;
+    padding: 15px;
+}
+.entradaData{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: #BFBFBF 1px solid;
+    transition: all 0.5s;
+}
+.quartosData{   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+}
+.inputDatabox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+    position: relative;
+    
+}
+input{
+    border: none;
+    background-color: transparent;
+}
+.btnData{
+    background-color: transparent;
+    width: 100%;
+    border: 1.5px solid rgb(161, 161, 161);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.btnData:hover{
+    background-color: #e9e9e9;
+}
+.pesquisarData{
+    background-color: #7E2726;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+    width: 150px;
+}
+
+/*----------PROMOCÕES-----------*/
+
+.promocoes{
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.promocoes h1{
+    font-weight: normal;
+    font-size: 75px;
+    color: #7E2726;
+    margin-top: 60px;
+}
+.boxPromo{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.itemPromo{
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+}
+#item1{
+    background-image: url(../img/casa1Desconsto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+#item2{
+    background-image: url(../img/dormoInterior.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+#item3{
+    background-image: url(../img/carro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.textPromo2{
+    font-size: 20px;
+}
+.descriptionPromo{
+    position: absolute;
+    background-color: #7E2726;
+    width: 50%;
+    height: 8%;
+    bottom: -5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.descriptionPromo p{
+    color: white;
+    font-size: 12px;
+    margin-top: 12px !important;
+}
+.contatoPromo{
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.avisoPromo{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avisoPromo p{
+    font-size: 30px;
+    width: 75%;
+    margin-left: 30px;    
+}
+.inputPromoBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputs{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+.inputPromo{
+    border: none;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: #828282;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #D9D9D9;
+}
+.checkboxPromo{
+    display: flex;
+}
+
+/*---------AVALIACOES---------*/
+
+.AvaliacoesBox{
+    width: 100%;
+    height: 80vh;
+}
+
+.titleAvaliacao{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center !important;
+    padding: 20px;
+    font-size: 25px;
+    padding-left: var(--espacamento);
+    padding-right: var(--espacamento);
+}
+.cardsBoxAvaliacao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+}
+.cardAvaliacao{
+    width: 27%;
+    height: 70%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+}
+.ImgCardAvaliacao{
+    width: 100%;
+    height: 60%;
+}
+.textCard{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.title{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+}
+.service{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    padding: 15px !important;
+}
+.service div{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service div p{
+    margin-top: 10px !important;
+}
+.boxBtn{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------SERVICOS OFERECIDOS-------------*/
+
+.servicosOferecidos{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.textOptions{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: var(--espacamento);
+}
+.textOptions div{
+    width: 80%;
+}
+.textOptions div p{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.textOptions div h1{
+    font-size: 45px;
+}
+.OptionImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right: var(--espacamento);
+}
+.btnOption{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.columCard{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.OptionCard{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 2px 24px -10px rgba(0,0,0,0.48);
+    border: 1px solid #E8E8E8;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.OptionCard p{
+    font-size: 20px;
+}
+.OptionCard img{
+    width: 40px;
+}
+#img1Card{
+    background-image: url(../img/carro.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img2Card{
+    background-image: url(../img/dromo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3Card{
+    background-image: url(../img/suite\ com\ cozinha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----SOBRE---------*/
+
+.sobre{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+}
+.sobreBox{
+    width: 85%;
+    height: 70%;
+    display: flex;
+}
+.boxImgSobre{
+    height: 100%;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: url(../img/ipua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxTextSobre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textSobre{
+    width: 100%;
+}
+
+/*------------FAQ------------------*/
+
+.faq{
+    width: 100%;
+    display: flex;
+}
+.faqText{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.textBoxfaq{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+}
+.faqPerguntas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+ }
+.faqBox{
+    width: 70%;
+    height: 20%;
+}
+#accordionExample{
+    width: 90%;
+    height: 500px;
+}
+.accordion-item{
+    border: 1.5px solid black;
+    padding: 25px;
+}
+.accordion-button {
+    font-size: 1.60rem; /* Aumenta o tamanho do texto */
+  }
+.accordion-button:not(.collapsed) {
+    background-color: #7E2726 !important; /* Cor do cabeçalho aberto */
+    color: white !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.accordion-button::after {
+    color: black; 
+}
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1); 
+}
+
+/*---------FOOTER------------*/
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inforFooter{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.socialMedia{
+    height: 100%;
+    width: 100%;
+}
+.contatosF{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listaContatosF{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+.listaContatosF p{
+    margin-top: 15px;
+}
+.listaContatosF p:hover{
+    cursor: pointer;
+}
+
+/*-------------MEDIA-QUERY 800px-------------*/
+
+@media (max-width: 800px){
+    header{
+        height: 13vh;
+    }
+    .divPrincipalHeader{
+        height: 13vh;
+    }
+    #logoIpua{
+        width: 10%;
+    }
+  
+    #imgLogin{
+        width: 18px;
+    }
+    .listSearch li a{
+        font-size: 0.5rem;
+    }
+    .login button{
+        width: 55px;
+        height: 10px;
+        border-radius: 20px;
+        font-size: 0.2rem;
+    }
+    .searchInicial{
+        border-top: 1px solid #DBDDE1;
+    }
+    :root{
+        --espacamento: 5rem;
+    }
+    .searchInicial{
+        height: 70vh; 
+    }
+    .divCentralMain{
+        height: 40vh; 
+    }
+    .titleSearchMain{
+        width: 100%;
+        height: 80%;
+    }
+    .contentTitle{
+        font-size: 0.3rem;
+    }
+}
+
+/*-------SCRIPT----------*/
+
+.outrasOpcoes{
+    width: 100%;
+    top: 90%;
+    position: absolute;
+    border: 1px solid rgb(161, 161, 161);
+    border-top: none;
+    background-color: #F9F9FA;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.outrasOpcoes button{
+    border: none;
+}
+.desativado{
+    display: none;
+}
+.positionFlutuante{
+    position: fixed;
+    z-index: 1;
+    background-color: white
+}
+.divFantasma{
+    width: 100%;
+    height: 10vh;
+    position:absolute;
+    top: 0;
+    display: none;
+}
+.Capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s;
+}
+.Capa:hover{
+    cursor: pointer;
+}
+.opacity{
+opacity: 0%;
+}

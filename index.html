@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinta do Ypuã</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/logoIcon.png" type="image/x-icon">
+    </head>
+
+<body>
+    <div id="header" class="divPrincipalHeader">
+        <header>
+            <img id="logoIpua" src="./assets/img/logo.png" width="7%" alt="" srcset="">
+            <div class="search">
+                <ul class="listSearch">
+                    <li style="margin-top: 20px;"><a href="#">Ínicio</a></li>
+                    <li style="margin-top: 20px;"><a href="#">Sobre</a></li>
+                    <li style="margin-top: 20px;"><a href="#">Acomodações</a></li>
+                    <li style="margin-top: 20px;"><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <div id="modalHeader" class="modalH">
+                    <div class="modalHtitle">
+                        <h1>Bem Vindo!</h1>
+                    </div>
+                    <div class="modalHtext">
+                        <p>Faça login e aproveite imediatamente todos os benefícios exclusivos para clientes.</p>
+                    </div>
+                    <div class="modalHbtn">
+                        <button style="background-color: #7E2726; border: none;"><a href="./cadastro.html" style="color: white">Registre-se</a></button>
+                        <button style="background-color: white;"><a href="./login.html" style="color: #7E2726;">Iniciar sessão</a></button>
+                    </div>
+                </div>
+                <button style="height: 40px;font-size: 15px;">Reserve já!</button>
+                <img width="40px" id="imgLogin" src="./assets/img/Icone Login.png" alt="">
+               <img id="setaLogin" width="10px" style="margin: 10px;" src="./assets/img/setaBaixo.png" alt="" srcset="">
+            </div>
+        </header>
+    </div>
+    <div class="divFantasma">
+    </div>
+    <main>
+
+        <div class="searchInicial">
+
+            <div class="divCentralMain">
+
+                <div class="titleSearchMain">
+                    <div class="contentTitle">
+                        <h1>Encontre a melhor oferta pra você...</h1>
+                        <p>Uma pousada que vai além do preço, trata-se de identificar um lugar que atenda às suas necessidades e proporcione uma experiência memorável. Considere fatores como localização, comodidades oferecidas, avaliações de outros hóspedes e condições de reserva.</p>
+                    </div>
+                </div>
+                <div class="contentSearchMain">
+                    <div class="contentSearch">
+                        <div class="entradaData">
+                            <img src="./assets/img/calender.png" alt="" srcset="">
+                            <div class="inputDatabox">
+                                <p style="margin-right: 50%;">Entrada</p>
+                                <input type="date" name="" id="inputData">
+                            </div>
+                        </div>
+                        <div class="entradaData">
+                            <div class="inputDatabox">
+                                <p style="margin-right: 60%;">Saida</p>
+                                <input type="date" name="" id="inputData">
+                            </div>
+                        </div>
+                        <div class="quartosData">
+                            <div class="entradaData" style="border-right: none;">
+                                <img style="margin-top: 5px;" src="./assets/img/money.png" alt="" srcset="">
+                                <div class="inputDatabox">
+                                    <p>Preço desejado (Diária)</p>
+                                    <button onclick="aparecerMenuPreco()" class="btnData">R$300 - R$800 <img
+                                            src="./assets/img/seta.png" width="10px" alt="" srcset=""></button>
+                                    <div class="outrasOpcoes" id="opcoesPreco">
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                        <button class="btnData">R$300 - R$800</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entradaData" style="border-right: none;">
+                                <img style="margin-top: 5px;" src="./assets/img/pessoa.png" alt="" srcset="">
+                                <div class="inputDatabox">
+                                    <p>Quantidade de Quartos</p>
+                                    <button onclick="aparecerMenuQuartos()" class="btnData">0 - 1 Quartos <img
+                                            src="./assets/img/seta.png" width="10px" alt="" srcset=""></button>
+                                    <div class="outrasOpcoes" id="opcoesQuartos">
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                        <button class="btnData">0 - 1 Quartos</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="pesquisarData">Pesquisar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="promocoes">
+            <h1>CONFIRA NOSSAS PROMOÇÕES</h1>
+
+            <div class="boxPromo">
+                <div id="item1" class="itemPromo">
+                    <div id="capa1" class="Capa">
+
+                    </div>
+                    <div class="descriptionPromo">
+                        <p class="textPromo1"><del>R$ 2000</del></p>
+                        <P class="textPromo2">A PARTIR DE R$ 1500</P>
+                    </div>
+                </div>
+                <div id="item2" class="itemPromo">
+                    <div id="capa2" class="Capa">
+
+                    </div>
+                    <div class="descriptionPromo">
+                        <p class="textPromo1"><del>R$ 2000</del></p>
+                        <P class="textPromo2">A PARTIR DE R$ 1500</P>
+                    </div>
+                </div>
+                <div id="item3" class="itemPromo">
+                    <div id="capa3" class="Capa">
+
+                    </div>
+                    <div class="descriptionPromo">
+                        <p class="textPromo1"><del>R$ 2000</del></p>
+                        <P class="textPromo2">A PARTIR DE R$ 1500</P>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contatoPromo">
+                <div class="avisoPromo">
+                    <img src="./assets/img/envio.png" width="70px" alt="">
+                    <p>FIQUE POR DENTRO DAS NOSSAS PROMOÇÕES</p>
+                </div>
+                <div class="inputPromoBox">
+                    <div>
+                        <div class="inputs">
+                            <div class="email">
+                                <input style="border: none;" class="inputPromo" type="text" placeholder="Primeiro nome">
+                                <input style="border: none;" class="inputPromo" type="email"
+                                    placeholder="Email favorito" name="" id="">
+                            </div>
+                            <button style="width: 30%;" class="pesquisarData">Enviar</button>
+                        </div>
+                        <div style="margin-left: 10px;" class="checkboxPromo">
+                            <input style="margin-top: -16px;" type="checkbox" name="" id="">
+                            <p style="margin-left: 5px;">Eu aceito receber conteúdos relacionados aos produtos e
+                                serviços do Quinta de Ypuã.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="AvaliacoesBox">
+            <div class="titleAvaliacao">
+                <h1>Melhores avaliações</h1>
+            </div>
+            <div class="cardsBoxAvaliacao">
+                <div class="cardAvaliacao">
+                    <div id="img1Card" class="ImgCardAvaliacao">
+
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Charrua (Bus)</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cardAvaliacao">
+                    <div id="img2Card" class="ImgCardAvaliacao">
+
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Domo</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cardAvaliacao">
+                    <div id="img3Card" class="ImgCardAvaliacao">
+                    </div>
+                    <div class="textCard">
+                        <div class="title">
+                            <h2>Suíte com cozinha</h2>
+                            <p>8.8 - Excelente (242)</p>
+                        </div>
+                        <div class="service">
+                            <div>
+                                <img src="./assets/img/piscina.png" alt="">
+                                <p>Acesso à piscina</p>
+                            </div>
+                            <div>
+                                <img src="./assets/img/bar.png" alt="">
+                                <p>Bar disponível</p>
+                            </div>
+                        </div>
+                        <div class="boxBtn">
+                            <button style="width: 90%;" class="pesquisarData">Conferir preços</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="servicosOferecidos">
+            <div class="textOptions">
+                <div>
+                    <h1>
+                        Serviços oferecidos pela <br> Quinta do Ypuã
+                    </h1>
+                    <p>
+                        A pousada Quinta do Ypuă oferece ao seus clientes um recanto de aconchego e lazer, em ambiente rústico e agradável. Ideal para quem gosta de fugir da rotina e procura um local de paz para descansar e curtir a natureza.
+                    </p>
+                </div>
+                <div class="btnOption">
+                    <button style="width: 40%;font-size: 20px;margin-top: -20px;" class="pesquisarData">Saiba
+                        Mais</button>
+                </div>
+            </div>
+            <div class="OptionImg">
+                <div class="columCard">
+                    <div class="OptionCard">
+                        <img src="./assets/img/arCondicionado.png" alt="">
+                        <p>Ar Condicionado</p>
+                    </div>
+                    <div class="OptionCard">
+                        <img src="./assets/img/wifi.png" alt="">
+                        <p>Wi-fi Gratuito</p>
+                    </div>
+                </div>
+                <div class="columCard">
+                    <div class="OptionCard">
+                        <img src="./assets/img/cafe.png" alt="">
+                        <p>Café da Manha</p>
+                    </div>
+                    <div class="OptionCard">
+                        <img src="./assets/img/televisao.png" alt="">
+                        <p>Televisão</p>
+                    </div>
+                </div>
+                <div class="columCard">
+                    <div class="OptionCard">
+                        <img src="./assets/img/toalha.png" alt="">
+                        <p>Toalhas</p>
+                    </div>
+                    <div class="OptionCard">
+                        <img src="./assets/img/cozinha.png" alt="">
+                        <p>Cozinha</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sobre">
+            <div class="sobreBox">
+                <div class="boxImgSobre">
+                </div>
+                <div class="boxTextSobre">
+                    <div class="textOptions">
+                        <div id="textSobre">
+                            <h1>
+                                História do Quinta de Ypuã
+                            </h1>
+                            <p>
+                                A Quinta do Ypuã, localizada em Lauro Müller, Santa Catarina, foi criada para proporcionar diversão, relaxamento e conexão com a natureza. Com trilhas que levam ao rio Ypuă, mirantes com vistas deslumbrantes e espaços ao ar livre, a pousada oferece um refúgio ideal para quem busca paz e tranquilidade. Suas acomodações aconchegantes e a gastronomia local tornam o lugar perfeito para uma escapada, estimulando o bem-estar e a desconexão com o mundo moderno, em harmonia com a natureza.
+                            </p>
+                        </div>
+                        <div class="btnOption">
+                            <button style="width: 60%;font-size: 20px;" class="pesquisarData">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="faqText">
+                <div class="textBoxfaq">
+                    <p style="font-size: 60px;"><span style="color: #7E2726;">FAQ</span> - Perguntas frequentes</p>
+                </div>
+            </div>
+            <div class="faqPerguntas">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Como posso verificar a disponibilidade de quartos em uma data específica?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Acesse a página inicial do site, insira as datas desejadas no campo de busca e clique em "Pesquisar". O sistema exibirá todas as pousadas disponíveis para o período selecionado.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Quais são as formas de pagamento aceitas para as reservas?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Aceitamos pagamentos via cartão de crédito, débito, Pix e boletos bancários. Para mais detalhes, consulte nossa seção de Política de Pagamento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Posso cancelar ou alterar minha reserva?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sim, é possível cancelar ou alterar sua reserva seguindo as condições da nossa Política de Cancelamento. Acesse sua conta, vá até a seção "Minhas Reservas" e escolha a opção desejada. Note que podem ser aplicadas taxas dependendo da antecedência do cancelamento.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="inforFooter">
+            <div>
+                <img src="./assets/img/fotoYpuaWhite.png" alt="" srcset="">
+            </div>
+            <div class="contatosF">
+                <div class="listaContatosF">
+                    <p>CONTATO</p>
+                    <p>SOBRE</p>
+                    <p>SUPORTE</p>
+                    <p>EMPREGOS</p>
+                </div>
+                <p style="color: white;">© Pousada Quinta do Ypuã - Todos os direitos reservados</p>
+            </div>
+        </div>
+        <div class="socialMedia">
+
+        </div>
+
+    </footer>
+    </div>
+    <script src="./assets/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
